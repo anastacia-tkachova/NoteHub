@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { getMe, updateMe } from '@/lib/api/clientApi';
+import { useAuthStore } from '@/lib/store/authStore';
 import { ApiError } from '@/lib/api/api';
-import Link from 'next/link';
 
 import css from './EditProfilePage.module.css';
 
@@ -16,6 +16,8 @@ export const EditProfile = () => {
   const [avatar, setAvatar] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+
+  const setUser = useAuthStore(state => state.setUser);
 
   useEffect(() => {
     getMe().then(user => {
@@ -34,7 +36,8 @@ export const EditProfile = () => {
     setError('');
 
     try {
-      await updateMe({ username });
+      const updatedUser = await updateMe({ username });
+      setUser(updatedUser);
       router.push('/profile');
     } catch (error) {
       setError(
@@ -77,9 +80,15 @@ export const EditProfile = () => {
             <button type="submit" className={css.saveButton}>
               Save
             </button>
-            <Link href="/profile" type="button" className={css.cancelButton}>
+            <button
+              onClick={() => {
+                router.back();
+              }}
+              type="button"
+              className={css.cancelButton}
+            >
               Cancel
-            </Link>
+            </button>
           </div>
         </form>
       </div>

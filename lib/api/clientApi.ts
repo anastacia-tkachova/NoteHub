@@ -30,7 +30,7 @@ export const fetchNotes = async (searchWord: string, currentPage: number, catego
 
 export const fetchNoteById = async (id: string): Promise<Note> => {
   const response = await api.get<Note>(
-    `$/notes/${id}`,
+    `/notes/${id}`,
   );
   return response.data;
 };
