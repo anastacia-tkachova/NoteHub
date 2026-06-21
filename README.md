@@ -20,6 +20,13 @@ A modern, full-stack multi-user note management ecosystem built with **Next.js**
 
 ## 🛠️ Tech Stack
 
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="40" height="40" alt="Next.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="TailwindCSS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
+</p>
+
 * **Framework:** Next.js & React
 * **State Management & Fetching:** TanStack Query (React Query), Axios, React Context API
 * **Styling:** Tailwind CSS
