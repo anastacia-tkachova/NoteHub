@@ -4,7 +4,7 @@
 
 A modern, full-stack multi-user note management ecosystem built with **Next.js**. The application delivers a high-performance user experience by seamlessly combining secure authentication with advanced server-state synchronization.
 
-🔗 **Live Demo:** [09-auth-indol-sigma-77.vercel.app](https://09-auth-indol-sigma-77.vercel.app/)
+🔗 **Live Demo:** [https://note-hub-indol-sigma-77.vercel.app/](https://note-hub-indol-sigma-77.vercel.app/)
 
 ---
 
