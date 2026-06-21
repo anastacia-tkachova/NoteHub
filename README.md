@@ -31,8 +31,8 @@ A modern, full-stack multi-user note management ecosystem built with **Next.js**
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/anastacia-tkachova/NoteHub.git](https://github.com/anastacia-tkachova/NoteHub.git)
-cd HoteHub
+git clone https://github.com/anastacia-tkachova/NoteHub.git
+cd NoteHub
 ```
 
 ### 2. Install dependencies
